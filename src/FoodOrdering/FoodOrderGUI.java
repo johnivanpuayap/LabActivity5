@@ -17,4 +17,16 @@ public class FoodOrderGUI extends JFrame{
     private JRadioButton rb10;
     private JRadioButton rb15;
     private JCheckBox cSundae;
+
+    public FoodOrderGUI() {
+
+    }
+    public static void main(String[] args) {
+        FoodOrderGUI order = new FoodOrderGUI();
+        order.setContentPane(order.panel1);
+        order.setSize(500, 500);
+        order.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        order.setVisible(true);
+        order.setTitle("Simple Calculator");
+    }
 }
