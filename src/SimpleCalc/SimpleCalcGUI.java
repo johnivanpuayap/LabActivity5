@@ -49,6 +49,6 @@ public class SimpleCalcGUI extends JFrame {
         calculator.setSize(500, 500);
         calculator.setDefaultCloseOperation(EXIT_ON_CLOSE);
         calculator.setVisible(true);
-        calculator.setTitle("Leap Year Checker");
+        calculator.setTitle("Simple Calculator");
     }
 }
