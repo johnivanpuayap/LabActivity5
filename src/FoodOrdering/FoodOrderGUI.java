@@ -1,11 +1,13 @@
 package FoodOrdering;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class FoodOrderGUI {
+public class FoodOrderGUI extends JFrame{
     private JPanel panel1;
     private JCheckBox cPizza;
-    private JRadioButton noneRadioButton;
+    private JRadioButton rbNone;
     private JButton btnOrder;
     private JCheckBox cBurger;
     private JCheckBox cFries;
