@@ -23,7 +23,6 @@ public class FoodOrderGUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 boolean foodSelected = false;
-                boolean discountSelected = false;
                 double total = 0;
 
                 if(cPizza.isSelected()){
