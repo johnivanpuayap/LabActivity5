@@ -78,7 +78,7 @@ public class FoodOrderGUI extends JFrame{
         order.setSize(500, 500);
         order.setDefaultCloseOperation(EXIT_ON_CLOSE);
         order.setVisible(true);
-        order.setTitle("Simple Calculator");
+        order.setTitle("Food Order");
     }
 
     public static class NoFoodSelectedException extends Exception {
