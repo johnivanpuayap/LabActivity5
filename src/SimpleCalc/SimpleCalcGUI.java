@@ -1,8 +1,8 @@
 package SimpleCalc;
 
-import LeapYear.LeapYearGUI;
-
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class SimpleCalcGUI extends JFrame {
     private JPanel panel1;
@@ -13,7 +13,29 @@ public class SimpleCalcGUI extends JFrame {
     private JTextField lblResult;
 
     public SimpleCalcGUI() {
+        btnCompute.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String operation = (String) cbOperations.getSelectedItem();
+                int n1 = Integer.parseInt(tfNumber1.getText());
+                int n2 = Integer.parseInt(tfNumber2.getText());
+                int result = 0;
 
+                if (operation.equals("+")) {
+                    result = n1 + n2;
+                }
+                if (operation.equals("-")) {
+                    result = n1 - n2;
+                }
+                if (operation.equals("*")) {
+                    result = n1 * n2;
+                }
+                if (operation.equals("/")) {
+                    result = n1 / n2;
+                }
+                lblResult.setText(String.valueOf(result));
+            }
+        });
     }
     public static void main(String[] args){
         SimpleCalcGUI calculator = new SimpleCalcGUI();
