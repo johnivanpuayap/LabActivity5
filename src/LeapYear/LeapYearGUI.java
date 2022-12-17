@@ -25,8 +25,9 @@ public class LeapYearGUI extends JFrame{
                             if (year % 400 == 0) {
                                 isLeapYear = true;
                             }
+                        } else {
+                            isLeapYear = true;
                         }
-                        isLeapYear = true;
                     }
 
                     if (isLeapYear) {
